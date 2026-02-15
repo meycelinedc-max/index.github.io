@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Photo Gallery</title>
+
+    <style>
+        #image {
+            width: 600px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 20px auto;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            line-height: 400px;
+            font-size: 20px;
+            color: black;
+        }
+
+        .preview {
+            width: 150px;
+            margin: 10px;
+        }
+
+        .gallery {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align:center;">My Photo Gallery</h1>
+
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <div class="gallery">
+        <img class="preview"
+             src="https://w0.peakpx.com/wallpaper/754/500/HD-wallpaper-red-night-red-house-scenic-beautiful-city-moon-anime-beauty-scenery-light-night-cloud-lovely-cityscape-town-sky-building-scene.jpg"
+             alt="Beautiful Red Scene"
+             onmouseover="upDate(this)"
+             onmouseout="undo()">
+
+        <img class="preview"
+             src="https://hbr.org/resources/images/article_assets/2004/10/Apr24_18_517518639-1.jpg"
+             alt="Calm Blue Ocean"
+             onmouseover="upDate(this)"
+             onmouseout="undo()">
+
+        <img class="preview"
+             src="https://media.istockphoto.com/id/1471370789/photo/a-beautiful-forest-in-spring.jpg?s=612x612&w=0&k=20&c=yjyc4EyVeNhNB_OcVFTWjbBrVd2EDQePnpKLn4CWIyM="
+             alt="Peaceful Green Forest"
+             onmouseover="upDate(this)"
+             onmouseout="undo()">
+
+        <img class="preview"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cape_may.jpg/500px-Cape_may.jpg"
+             alt="Warm Sunset Sky"
+             onmouseover="upDate(this)"
+             onmouseout="undo()">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
